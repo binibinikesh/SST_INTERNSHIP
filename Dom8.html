@@ -1,0 +1,70 @@
+<html>
+    <head>
+                <script>
+
+                    function validate(){
+                        var name= document.getElementById("demo").value;
+                        var age=document.getElementById("age").value;
+                        var letters=/^[a-zA-Z\s]+$/;
+                        var pass=document.getElementById("pass").value;
+                        if(name==""){
+                           //document.write("Enter Name")
+                           document.getElementById("l1").innerHTML=("Enter Name")
+                        }
+                        else if(letters.test(name)==false)
+                        {
+                            document.getElementById("l1").innerHTML="Enter the correct alphabets";
+                        }
+                        if(age==""){
+                            document.getElementById("l2").innerHTML="Enter Age";
+                        }
+                        if(pass==""){
+                            document.getElementById("l3").innerHTML="Your not enter";
+                        }
+                        else if(pass>=8){
+                            document.getElementById("l3").innerHTML="maximum 8";
+                        }
+                        else if(pass=="Binikesh"){
+                            document.getElementById("l3").innerHTML="Comfirm password"
+                        }
+                        else if(pass==""){
+                        document.getElementById("l3").innerHTML="Incorrect password"
+                        }
+                    }
+                </script>
+            </head>
+
+   <body>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>Enter name</label>
+                        <input type="text" name="name" id="demo"><br>
+                        <label id="l1"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter age</label>
+                        <input type="text" name="age" id="age"><br>
+                        <label id="l2"></label>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <label>password</label>
+                        <input type="password" name="password" id="pass"><br>
+                        <label id="l3"></label>
+                    </td>
+                </tr>                             
+                     <tr>
+                        <td>
+                            <button type="button"onClick="validate()">click me</button>
+                        </td>
+                     </tr>
+            </table>
+        </form>
+        
+            </body>
+        </html>

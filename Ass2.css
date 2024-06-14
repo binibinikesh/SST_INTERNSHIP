@@ -1,0 +1,47 @@
+header{
+    background-color:rgb(2, 0, 0);
+    display:block;
+    text-align:left;
+}
+
+footer{
+    background-color:black;
+    color:white;
+    text-align:left;
+}
+div{
+    min-height: 50;
+    
+}
+nav{
+    display:flex;
+    gap:20px;
+    padding-top: 25px;
+    float:right;
+    margin-right:80px;
+}
+.menu-item{
+    display:block;
+    background-color:#00f7ff;
+    border-radius:6px;
+}
+.menu-item a{
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    display:block;
+}
+.abc{
+    background-color: rgb(0, 255, 0);
+    border-radius: 10px;
+    height:30%;
+    width:30%;
+    text-align:center;
+    margin-left:50%;
+    margin-top: 10%;
+}
+
+
+
+
+

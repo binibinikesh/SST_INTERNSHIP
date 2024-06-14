@@ -1,0 +1,85 @@
+<html>
+    <body>
+        <head>
+            <link rel="stylesheet" text="text/css" href="Ass2.css">
+        </head>
+        <body>
+            <script>
+                function validate(){
+                    alert("hello");
+                    var pri=document.getElementById("x").value;
+                    var qua=document.getElementById("y").value;                  
+                    var amo=pri*qua;
+                    document.getElementById("d").innerHTML = amo;
+
+                    if(pri==""){
+                        document.getElementById("a").innerHTML="Enter price";
+                     }
+                     else if(isNaN(pri))
+                     {
+                        document.getElementById("a").innerHTML="you can only enter number";
+                     }
+                    if (qua==""){
+                        document.getElementById("b").innerHTML="Enter quantity";
+
+                    }
+                    else if(isNaN(qua))
+                    {
+                        document.getElementById("b").innerHTML="you can only enter number";
+                    }
+
+                 }
+
+                
+            </script>
+            <header>
+                <img src="gtr_.jpg" height="100px" width="200px"/>
+                <nav>
+                    <div class="menu-item"><a href="Ass4.html">Home</a></div>
+                    <div class="menu-item"><a href="product.html">product</a></div>
+                    <div class="menu-item"><a href="login.html">Login</a></div>
+                    <div class="menu-item"><a href="Register.html">Register</a></div>                
+                </nav>
+            </header>
+           <br> 
+        </body>
+        <table style="width:50%"border="1"bgcolor="orange">
+        <tr>
+            <td>               
+                <label>Product price</label>
+                <input type="text" id="x"><br>
+                <label id="a"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>               
+                <label>quantity</label>
+                <input type="text"name="age"id="y"><br>
+                <label id="b"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>               
+                <label>Total price</label>
+                <!-- <input type="text"name="Name"id="z"><br> -->
+                <label id="d"></label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <button type="button" onclick="validate()">click me</button>
+            </td>
+         </tr> 
+    </table>
+    <div></div>
+        <footer>
+            <p>
+                Designed and developed by Binikesh
+            </p>
+            
+        </footer>
+    </body>
+    </html>
+        
+

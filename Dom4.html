@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <input type="text" id="texta">
+        <input type="text" id="textb">
+        <button onclick="add()">+</button>
+        <p id="demo"></p>
+        <script>
+            function add(){
+                var first=parseInt(document.getElementById("texta").value);
+                var second=parseInt(document.getElementById("textb").value);
+                var sum=first+second;
+                document.getElementById("demo").innerText=sum;
+            }
+        </script>
+    </body>
+</html>

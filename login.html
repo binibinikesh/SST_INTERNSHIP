@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" text="text/css" href="Ass2.css">
+    </head>
+    <body style="background-color: aqua;">
+        <header>
+            <img src="gtr_.jpg" height="100" width="200"/>
+            <nav>
+                <div class="menu-item"><a href="Ass4.html">Home</a></div>
+                <div class="menu-item"><a href="product.html">product</a></div>
+                <div class="menu-item"><a href="login.html">Login</a></div>
+                <div class="menu-item"><a href="Register.html">Register</a></div>                
+            </nav>
+        </header>
+        <div class="abc">
+            <table> 
+                <tr>
+                     <td>
+                            <label>username</label>
+                            </td>
+                            <td>
+                                <input type="text" id="username">
+                            </td>
+                         </tr>
+                          <tr>
+                            <td>
+                                <label>password</label>
+                            </td>
+                            <td>
+
+                                <input type="password" id="password">
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" onclick="display()">login</button>
+                                </td>
+                            </tr>                                                          
+                             </table>
+                             <br>       
+                             <script>
+                function display(){
+                    var first=document.getElementById("username").value;
+                    var second=document.getElementById("password").value;
+                    if(first=="abc"&&second=="1234")
+                        {
+                        alert("You have sucessfully loged in");//Display alert box
+                        window.location="product.html";//Redirect to another web page.
+                   
+                        }
+                        else
+                        {
+                            alert("Incorrect username or password");
+                        }
+                        
+                }
+            </script>      
+        </div>  
+        </body> 
+        <footer>
+            <p>
+                Designed and developed by Binikesh
+            </p>
+        </footer>
+
+</body>
+</html>

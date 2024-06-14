@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+            function versa(){
+                var box1=document.getElementById("x").value;
+                var box2=document.getElementById("y").value;
+                temp=box1;
+                box1=box2;
+                box2=temp;
+
+                document.getElementById("x").value = box1;
+                document.getElementById("y").value = box2;
+
+                if(box1==""){
+                    document.getElementById("a").innerHTML="Enter the text";
+                }
+                if(box2==""){
+                    document.getElementById("b").innerHTML="Enter the text";
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <tr>
+            <td>
+                <label>box1</label>
+                <input type="text" name="box1" id="x">
+                <label id="a"></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>box2</label>
+                <input type="text" name="box2" id="y">
+                <label id="b"></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button"onClick="versa()">click me</button>
+            </td>
+         </tr>
+    </body>
+</html>

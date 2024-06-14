@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function validateform(){
+                let x=document.forms["myform"]["fname"].value;
+                if(x==""){
+                    alert("Name must be filled out");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Javascript validation</h2>
+        <form name="myform" action="Ass4.html"
+        onsubmit="return validateform()"method="post">
+        name:<input type="text" name="fname">
+        <input type="submit" value="submit">
+    </form>
+    </body>
+</html>
